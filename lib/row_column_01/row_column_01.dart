@@ -16,7 +16,6 @@ class _RowColumn01State extends State<RowColumn01> {
         centerTitle: true,
       ),
       body:  Center(
-        child: Container(width: 500,height: 500,
           child: Column(
             children: [
               Expanded(
@@ -62,7 +61,6 @@ class _RowColumn01State extends State<RowColumn01> {
             ],
           ),
         ),
-      ),
     );
   }
 }
