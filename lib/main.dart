@@ -11,7 +11,7 @@ void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: RowColumn01(),
+      home: RowColumn06(),
     ),
   );
 }

@@ -205,9 +205,9 @@ class _RowColumn06State extends State<RowColumn06> {
               //4
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                Column(
+                Column(crossAxisAlignment: CrossAxisAlignment.stretch, // left
                   children: [
-                    Column(
+                    Column(crossAxisAlignment: CrossAxisAlignment.stretch, // 4 left 1
                       children: [
                         Row(),
                         Row(
@@ -216,7 +216,7 @@ class _RowColumn06State extends State<RowColumn06> {
                               children: [
                                 Row(),
                                 Row(
-                                  children: [Column(), Column()],
+                                  children: [Container( ), Column()],
                                 )
                               ],
                             ),
@@ -225,10 +225,14 @@ class _RowColumn06State extends State<RowColumn06> {
                         )
                       ],
                     ),
-                    Column()
+                    Column(// 4 left 2
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [Expanded(child: Container(height: 200, width: 50, color: Colors.lightGreenAccent,))],
+
+                    )
                   ],
                 ),
-                Column(
+                Column( crossAxisAlignment: CrossAxisAlignment.stretch,  // right
                   children: [
                     Column(
                       children: [
